@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+			<head>
+						<meta charset="UTF-8">
+						<title>Insert title here</title>
+						<script>
+									function back(){
+										window.close();
+									}
+						
+						</script>
+						<style>
+								*{
+									margin:0; padding:0;
+									color:#666;
+									font-family:"돋움",verdana;
+								}
+								div{
+									width:538px;
+									margin:30px 30px;
+								}
+								p{
+									text-align:right;
+									font-size:12px;
+									margin-bottom:3px;
+								}
+								th{
+									text-align:left;
+								}
+								img{
+									padding-left:10px;
+								}
+								table{
+									width:538px;
+									font-size:12px; color:#666;
+									border-collapse:collapse;
+									border-top:2px solid #5b5b5b;
+								}
+								table tr th{
+									background:#ebebeb;
+								}
+								table tr{
+									border-bottom:1px solid #cecece;
+									line-height:52px;
+								}
+								table tr th, table tr td{
+									height:52px; box-sizing:border-box;
+								
+								}								
+								table tr:nth-child(3) {
+									border-bottom:2px solid #5b5b5b;
+								}
+								table tr th{
+									padding-left:5px;
+								}				
+								table tr td{
+									padding-left:10px;								
+								}
+								select{
+									border:1px solid #ccc;
+									box-sizing:border-box; padding:2px;
+									width:55px; height:25px;
+									font-size:12px;
+									border:1px #c4c4c4 solid;
+								}
+								td input{
+									width:388px; height:20px;
+									padding:1px;
+									border:1px solid #ccc;
+								}
+								
+								
+								div>div{
+									margin:0px; width:100%;
+								}				
+								div>div input{
+									display:block;
+									width:94px; height:32px;
+									background-color:#ed5f00;
+									background-image:url("images/bookmark_icon2.png");
+									background-position:10px 10px;
+									background-repeat:no-repeat;
+									border:1px solid #c85000;
+									color:#fff; font-weight:bold;
+									line-height:32px;
+									margin:0 auto;
+									margin-top:20px;
+									cursor:pointer;
+								}
+						</style>
+						
+						
+						
+			</head>
+			
+			<body>
+						<div>
+								<p><img src="images/bookmark_icon.png"> 필수항목</p>
+								<table>			
+											<colgroup>
+													<col width="130px">
+													<col>
+											</colgroup>
+											<tr>
+													<th><img src="images/bookmark_icon.png"> 표시</th>
+													<td>
+															<select>
+																		<option>표시</option>
+																		<option>숨김</option>													
+															</select>
+													</td>
+											</tr>
+											<tr>
+													<th><img src="images/bookmark_icon.png"> 표시 순서</th>
+													<td>
+															<select>
+																		<option>2</option>
+																		<option>3</option>		
+																		<option>4</option>
+																		<option>5</option>																	
+																		<option>6</option>
+																		<option>7</option>																	
+																		<option>8</option>
+																		<option>9</option>					
+															</select>			
+													</td>
+											</tr>									
+											<tr>
+													<th><img src="images/bookmark_icon.png"> 즐겨찾기 이름</th>
+													<td>
+															<form>
+																	<input type="text" placeholder="공지사항">
+															</form>
+													</td>
+											</tr>									
+								</table>	
+								<div><input type="button" value=" 등록하기" onclick="back()"></div>
+						</div>		
+			</body>
+</html>

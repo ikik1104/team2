@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			function id_check_db(){
+				//db와 연동 후 아이디가 있는지 확인하는 형태
+				document.getElementById("ch_text").innerHTML="아이디 사용이 가능합니다.";
+			}
+			function join_datainput(){
+				var id_chk = /^[a-zA-Z][a-zA-Z0-9_]{3,16}$/;
+			
+				if(id_check.value==""){
+					alert("아이디를 입력해주세요.");
+					return false;
+				}
+				if(!(id_chk.test(id_check.value))){
+					alert("4~16자리의 영문, 숫자, 특수기호(_)만 사용하실 수 있습니다.(첫 글자는 영문)");
+					id_check.value="";
+					id_check.focus();
+					return false;
+				}
+				
+				opener.document.getElementById("j_id").value = document.getElementById("id_check").value;
+				window.close();
+			}
+		</script>
+	</head>
+	<body>
+		<form action="" name="pop" method="get">
+			<h1>아이디 중복 확인</h1>
+			<p>
+			4~16자리의 영문, 숫자, 특수기호(_)만 사용하실 수 있습니다.<br>
+			첫 글자는 영문으로 입력해 주세요.
+			</p>
+			<label>아이디 </label>
+			<input type="text" name="id_check" id="id_check">
+			<input type="button" value="중복확인" onclick="id_check_db()"><br>
+			<p id="ch_text"></p>
+			<br>
+			<input type="button" onclick="join_datainput()" value="확인">
+		</form>
+	</body>
+</html>
